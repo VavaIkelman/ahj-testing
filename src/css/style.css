@@ -1,0 +1,65 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+}
+.widjet{
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+	margin: 50px auto;
+}
+.cards{
+    flex-direction: column;
+}
+.card-img{
+    width: 40px;
+	height: 28px;
+	margin-left: 4px;
+	border-radius: 3px;
+}
+.visa{
+
+}
+.mir{
+
+}
+.mastercard{
+
+}
+.americanexpress{
+
+}
+.discover{
+
+}
+.jcb{
+
+}
+.diners{
+
+}
+.validate-form{
+    align-items: baseline;
+}
+.input-card-number{
+    width: 200px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 5px;
+    align-items: stretch;
+}
+.validate-button{
+    width: 100px;
+	height: 40px;
+	color: #000;
+	border-radius: 3px;
+	background-color: aquamarine;
+	cursor: pointer;
+}
