@@ -10,12 +10,13 @@ ul {
 .widjet{
     margin: 0 auto;
 }
-.container{
+.images-container{
     display: flex;
 	margin: 50px auto;
 }
 .cards{
-    flex-direction: column;
+    flex-direction: row;
+	padding: 0px;
 }
 .card-img{
     width: 40px;
@@ -23,29 +24,97 @@ ul {
 	margin-left: 4px;
 	border-radius: 3px;
 }
-.visa{
 
+.card-img-filter {
+	filter: grayscale(100%);
+	opacity: 0.5;
 }
-.mir{
 
+.container-message {
+	width: 200px;
+	height: 50px;
 }
-.mastercard{
 
+.modal {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: -1000;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow-y: scroll;
+	padding: 60px 15px;
 }
-.americanexpress{
 
+.modal-active{
+	position: fixed;
+	top:0;
+	visibility: visible;
+	opacity: 1;
+	transition: .3s;
+	
 }
-.discover{
 
+.modal__content {
+	width: 100%;
+	max-width: 500px;
+	padding: 50px;
+	background: #f9f9f9;
+	border-radius: 3px;
+	position: relative;
+	box-shadow: 0 5px 15px black;
 }
-.jcb{
 
+.modal-close__btn {
+	width: 32px;
+	height: 32px;
+	position: fixed;
+ 	top: 15px;
+	right: 15px;
+	bottom: 0;
+	left: 0;
+	background-image: url('../img/close-img.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	cursor: pointer;
+	transition: .3s;
 }
-.diners{
 
+.modal-close__btn:hover {
+	transition: .3s;
+	transform: rotate(180deg);
 }
+
+
+.modal__description {
+	font-size: 1.8rem;
+	margin: 0 0 15px;
+}
+
+.validate-button {
+	width: 100px;
+	height: 30px;
+	color: #000;
+	border-radius: 3px;
+	background-color: aquamarine;
+	cursor: pointer;
+}
+
+.validate-button:focus {
+	outline: 0px;
+}
+
 .validate-form{
-    align-items: baseline;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
 }
 .input-card-number{
     width: 200px;
