@@ -62,13 +62,14 @@ ul {
 }
 
 .modal__content {
-	width: 100%;
-	max-width: 500px;
-	padding: 50px;
-	background: #f9f9f9;
-	border-radius: 3px;
-	position: relative;
-	box-shadow: 0 5px 15px black;
+	width: 200px;
+    
+    padding: 50px;
+    background: #48c140;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 5px 15px #e4dfdf;
+    text-align: center;
 }
 
 .modal-close__btn {
@@ -76,7 +77,7 @@ ul {
 	height: 32px;
 	position: fixed;
  	top: 15px;
-	right: 15px;
+	right: 178px;
 	bottom: 0;
 	left: 0;
 	background-image: url('../img/close-img.png');
@@ -103,7 +104,7 @@ ul {
 	height: 30px;
 	color: #000;
 	border-radius: 3px;
-	background-color: aquamarine;
+	background-color: rgb(21, 150, 60);
 	cursor: pointer;
 }
 
